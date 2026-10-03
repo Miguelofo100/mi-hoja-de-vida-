@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFO-MG</title>
+    <link rel="stylesheet" href="mihuel.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" >
+                <img src="imagenes/MG.png">
+            </div>
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#sobre-mi">SOBRE MI</a></li>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+            <!-- <a href="#" class="editor-btn">Editor</a> -->   
+        </nav>
+    </header>
+    
+    <!-- Inicio -->
+    <section class="hero" id="inicio">
+        <div class="img">
+            <img src="imagenes/mg1.png" alt="">
+            <div class="texto-p">
+                <p>
+                Profesional Ingeniería Informática 
+                <br>
+                Ténico en Fotografía y Camarografia
+                </p>
+            </div>
+        </div>
+        
+        <div class="mini-text">
+            FOTO · VIDEO · CÓDIGO
+            <h1>Miguel Guerrero</h1>
+        </div>
+     
+        <div class="skills">
+            <div class="skill">Desarrollo Web</div>
+            <div class="skill">Fotografía</div>
+            <div class="skill">Camarografía</div>
+            <div class="skill">Adobe Premiere</div>
+            <div class="skill">Photoshop</div>
+        </div>
+
+        <div class="botones">
+            <a href="#" class="btn-verde">Contáctame</a>
+            <a href="#" class="btn-negro">Ver más ↓</a>
+        </div>
+        
+       
+    </section>
+       
+        <!-- <p>Pregrado de Ingeniera Informática, adquiriendo conocimientos y
+        habilidades iniciales de programación. Con metas para trabajar las tecnologías,
+        la comunicación, medios digitales innovadores. Conocimiento en realización de página Web,
+        Base de Datos, Java, HTML, CSS, y Python, Implementación de software orientado a la web
+        para Empresa de Turismo</p>
+
+        <p>Técnico profesional en fotografía y camarógrafa. Conocimiento en fundamentos fotográficos y de camarografita,
+        manejo de programas de diseño, Photoshop; programas de edición: adobe premier, herramientas básicas de internet,
+        ofimática y redes sociales. Experiencia en trabajos de organización de elementos y empaque en empresas de mercadeo
+        y publicidad. Mi objetivo como persona no oyente es contribuir con mis habilidades en una empresa innovadora Incluyente.</p>
+        <button>Contáctame</button>     -->
+    
+
+    <!-- SOBRE MI -->
+    <section class="sobre-mi" id="sobre-mi">
+        
+        <div class="titulo">
+            <span>Sobre Mi</span>
+        </div>
+ 
+        <div class="cards">
+  
+            <!-- CARD 1 -->
+            <div class="card">
+               
+               <div class="icono"> 
+                    <h3>Perfil</h3> 
+                    <img src="data:image/png;base64,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" alt="administrator-male">                   
+                </div>
+
+               <ul>
+                    <li>Profesional en Ingeniería Informática con conocimientos en programación, desarrollo web, bases de datos y tecnologías digitales. Manejo de Java, HTML, CSS y Python, además de experiencia en software orientado a la web para turismo. Técnica en fotografía y camarografía, con habilidades en Photoshop, Adobe Premiere, ofimática y redes sociales.</li>                    
+               </ul>
+
+               
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card">
+                <div class="icono">
+                    <h3>Habilidades laborales</h3>
+                    <img src="data:image/png;base64,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" alt="external-working-recruitment-agency-flaticons-lineal-color-flat-icons-3">
+                </div>
+                <ul>
+                    <li>Capacidad de adaptación a los cambios</li>
+                    <li>Habilidad y compromiso de las nuevas tecnologías Pagina Web, Base de datos, Software, Java, HTML, CSS y Python, Excel, MySQL.</li>
+                    <li>Disposición para aprender y facilidad en el desempeño de las tareas que se presenten</li>
+                    <li>Actitud creativa para el desarrollo de nuevas actividades</li>
+               </ul>
+
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="card">
+                <div class="icono"> 
+                    <h3>Habilidades personales</h3>
+                    <img src="data:image/png;base64,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" alt="chat">
+                </div>
+                
+                <ul>
+                    <li>Buenas relaciones interpersonales, responsable, organizado, puntal.</li><br>
+                    <li>Capacidad para resolver conflictos.</li><br>
+                    <li>Trabajo en equipo</li><br>
+                    <li>Liderazgo</li><br>
+                    <li>Capacidad para el manejo del respeto y la tolerencia y la lealtad.</li>
+                </ul>                
+
+            </div>
+
+             <!-- CARD 3 -->
+            <div class="card">
+                <div class="icono" >
+                    <h3>Desarrollo Web</h3>
+                    <img src="data:image/png;base64,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" alt="laptop-coding">
+                 </div>
+                
+
+                <ul>
+                    <!-- SKILLS BAR -->
+                    <li>HTML • CSS • JavaScript</li>
+                    <div class="bar">
+                        <div class="progress" style="--level:70%"></div>
+                        <span class="porcentaje1">70%</span>
+                    </div>
+                    
+                    <li>Java • Python</li>
+                    <div class="bar">
+                        <div class="progress" style="--level:65%"></div>
+                        <span class="porcentaje2">65%</span>
+                    </div>
+                    
+                    <li>Base de Datos</li>
+                    <div class="bar">
+                        <div class="progress" style="--level:40%"></div>
+                        <span class="porcentaje3">40%</span>
+                    </div>
+                        
+                    <li>Software orientado a la Web</li>
+                    <div class="bar">
+                        <div class="progress" style="--level:50%"></div>
+                        <span class="porcentaje4">50%</span>
+                    </div>
+
+                    <li>Ingles básico</li>
+                    <div class="bar">
+                        <div class="progress" style="--level:30%"></div>
+                        <span class="porcentaje5">35%</span>
+                    </div>
+                </ul>
+            </div>
+            <!-- CARD 4 -->
+            <div class="card">
+                <div class="icono">
+                    <h3>Experiencia laborales</h3>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFT0lEQVR4nO1Ye0ybVRQ/935AYYQWxlvIeIgDho1VK+AgG2Y8NOWhlFfBJTCDQ+OAwRh/ysQILoIxwkqWEZ0zC8zNZIJvDY5HmIkZi7rEPwiPLS5xSzQxwLJYdsy55atCYG2lpdRwk19yOb3nnN/vu69zAVhfi2OMDTDG/gQAtAbG2G0AaAcAb9gELYwx9rtCoTDtTEzEXWq1VUTFxMhiPgWAXADwdKWAdi5Ji3l6PRoqK22GRqulmZBn5EeaRVcJ+DwwKGjRHvIyiioqMD0jAxXe3ibG2AwA+LhCwFBIWJjd5P+NLJ1OXlKNbinAUFmJfn5+iwBw0RUCvgkND1+TmL68HMMjIgSov9a4kLAwmoEhVwhIpSWwGqns3FxUqpTo6eEhoFKphG2zCQCZROn+/ZhfVIS79+zByB07kDHAkKAAvGBsxfMnWjE4MEDY6Lfde/eKseRjcKGAcMbYJ15eXmITSpxbLqvgQH+sryrGa199gDMj5wSufXka6yqLMGi7v2Wc7CNJEh2nt+he2SjyjHP+/TYfxb1K/TOoVccLIu3NB/HiyTdw6lK/hfhK0G80hsaSj1YdjxRjm7fiHuf8MsXeCAE7KfmbzTWCFH1t+nst0muBfOqrikVfFrQU27UCxi8Yha2rpd5ie7elTtjGPzauKqDt6MYKoCV02cdbYXqhRIfpWvUyAfmZaci5uVT4+kwnDp19R/TJpnvqyWUC0rVqpBgUayOXkFzIfcQ5nzOT4xZiE4O9eGWwF7/98G2LjUSQ7crAKYuNfMDsO0exNnITr2xUBiw7dazh5y9Oy0vmMGyCpicy5zqP4i+DJ2xC/1tNsoBnYRM0f86ZyZCdjFfPvGoTyrKSaen8BQDKjSRawhhbtOXltR4wc44SZwh4hRJUV1djY2OjU1BdXS0LoVwObwUUfGxsDBcWFpyC0dFRWUC+MwQ8TsH7+/udJqCvr08W8JgzBMRT8M7OTpvITE1NYVdXlwD1bfHp6OiQBexyNHkNk6RZqhxprVojMjw8jEql0rIx6T0wMjJi1a+hocFcnUrSTQB4wlHkDYzzO76BISb/0AewrKzMKpHk5GRUqlRI/7EgkICUlBSrfqWlpRgQFoF+oREmxvldAKhaL/lj9AUjNamLLw5MYKQmBdPT060S8fX1xYSkJMuri/pks+aXlpaGkY+mojlXqnxkt/xX8mUUQF1QgYe+m8K6keuYkP0cxsTE2DQD9NVzCwsFlDbOQHR0NCZkF4pclPPh/HJ5Gdp/L3APj4ngh5JMdcOzIiBBW/ESKhQKnJ+fvy8RWu8kwJ49MD8/L2Jrn3/Zkq/20gwGPZho4p6eP9gvQJLuaooPWIIRMupfM5fOMzNWv+b09DR2d3cLUN+W8QCAGYdbl+XUFFUhlzzu2C1A8vS6GZuWhTWf/YSHhqawbvg65rWdQmddZqNLl1heW6/IRTkpd0xaJkqeXr/aLQAAOrjkgbrXe/DA+XGB/OPviSQ9PT04OTnpUBiNRhG74Pj7lny6ViN9fbJ33I8obZDmVXCMcek24xy3R8VhxCPJGK7WiiQ5OTnY1NTkUOTk5IjYlINyUU7Kzbh0a+kkWo1jCb3h7KowaaM5qxJV2Bl7iTvgEX0c/nb2abfCEX2cLASwVheLk8ZMt0KtLvYfATWZ0Xi1PcOtUJMZbRbAmHkPMCe/tBz6agP59WbeA+UAMCpmQu3rHtAoTQDQvcRdNDqmcLoq1C0wc3DHHyvvAiHgRus+t0BUgM/cUrHpngJglTJ7S8CNLQH7tgSgq4/HaRvxvxRgUCmk2dm6pHp3AHGV74G/AYbttdpPWNCoAAAAAElFTkSuQmCC" alt="external-Working-beverage-beshi-color-kerismaker">
+                </div>
+
+                <ul>
+                    <li>SECRETARIA INTEGRACION SOCIAL <BR>
+                        Dependencia: Centro Distrital de Referenciación y Apoyo Integral para la Inclusión Social – CADIS+
+                        Cargo: Contratista</li>
+                    <li>CORPORACIONES AUTÓNOMAS REGIONALES CUNDINAMARCA CAR<BR>
+                        Dependencia: Sac Dirección de Cultura Ambiental y Servicio al Ciudadano. CAR. Cargo: Contratista</li>
+                    <li>INSTITUTO NACIONAL PARA SORDOS INSOR<BR>
+                        Dependencia: Subdirección y Desarrollo – Información y Contenidos Accesibles,   
+                        Promoción y Articulación para el acceso al Goce Efectivo de Derecho. 
+                        Cargo: Contratista</li>
+                    <li>MC DONALDS<BR>
+                        Dependencia: Gestión alimentos Cargo: Crew</li>
+                        
+                </ul>
+
+                <!-- <h3>Camarografía</h3>
+
+                <ul>
+                    <li>Técnico en camarografía</li>
+                    <li>Adobe Premiere</li>
+                    <li>Edición de video</li>
+                    <li>Producción audivisual</li>
+                </ul> -->
+            </div>
+            
+
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- proyectos -->
+    <section class="proyectos" id="proyectos">
+        <!-- Titulo -->
+         <div class="titulo-proyectos">
+            <span>Trabajos</span>
+            <h2>Proyectos</h2>
+         </div>
+
+        <!-- CARDS -->
+         <div class="contenedor-proyectos">
+
+            <!-- CARD 1 -->
+             <div class="card-proyecto">
+                <img src="imagenes/soy yo.jpg" alt="fotografia">
+
+                <div class="contenido">
+                    <small>Foto</small>
+                    <h3>Fotografia de Eventos</h3>
+                    <p>
+                        Cobertura profesional de eventos corporativos y sociales
+                        con equipo especializado. 
+                    </p>
+                </div>
+             </div>
+
+            <!-- CARD 2 -->
+             <div class="card-proyecto">
+                <img src="imagenes/Miguel.jpg" alt="Video">
+
+                <div class="contenido">
+                    <small>Foto</small>
+                    <h3>Producción Audiovisual</h3>
+                    <p>
+                        Producción de videos corporativos y publicitarios
+                        con edición en Adobe Premiere. 
+                    </p>
+                </div>
+             </div>
+
+             <!-- CARD 3 -->
+              <div class="card-proyecto">
+                <img src="imagenes/ofo-logo.jpg" alt="Web">
+
+                <div class="contenido">
+                    <small>Foto</small>
+                    <h3>Plataforma Web Turismo</h3>
+                    <p>
+                        Sitio web orientado al sector turístico con base de datos
+                        y gestión de contenido. 
+                    </p>
+                </div>
+             </div>
+             
+         </div>
+
+    </section>
+
+    <!-- CONTACTOS -->
+    <section class="contacto" id="contacto">
+    
+    <!-- Izquierda -->
+        <div class="info-contacto">
+            <span>CONTACTO</span>
+            <h2>trabajamos<br>
+                juntos
+            </h2>
+        
+            <p>Estoy disponible para proyectos de desarrollo web,
+                fotografía y producción audiovisual.
+                Mi objetivo es contribuir con mis habilidades
+                en una empresa innovadora e inclusiva.
+            </p>
+
+            <div class="correo">
+                ✉ miguelofo@gmail.com
+            </div>
+        </div>
+
+    <!-- DERECHA -->
+     <form class="formulario">
+        <div class="input-group">
+            <input type="text" placeholder="Tu nombre">
+            <input type="email" placeholder="correo">
+        </div>
+
+        <textarea placeholder="Cuentame sobre tu proyectos...."></textarea>
+
+        <button type="submit">
+            Enviar mensaje ✈
+        </button>
+     </form>
+    </section>
+
+     <!--FOOTER  -->
+    <footer>
+        <p>
+            © 2026 Miguel Guerrero. Todos los derechos reservados.
+        </p>
+        <div class="footer-links">
+            Diseño · Desarrollo · Fotografía
+        </div>
+    </footer>
+    
+</body>
+</html> 
